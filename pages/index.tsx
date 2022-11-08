@@ -1,10 +1,9 @@
-import { Box, Container, Flex, HStack ,StackDivider,Text,VStack,Stack, Icon, Center,Image } from '@chakra-ui/react'
+import { Box, Container, Center,Image } from '@chakra-ui/react'
 import Concept from '../components/Main/Concept'
 import LayoutMenu from '../components/Headers'
 import News from '../components/Main/News'
 import TopMenu from '../components/Main/TopMenu'
 import Info from '../components/Main/Info'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (

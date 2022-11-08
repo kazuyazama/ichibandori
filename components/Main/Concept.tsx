@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, HStack, Image, SimpleGrid, Spacer, Stack, StackDivider, Text, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, Heading, HStack, Image,  Stack, StackDivider, Text, VStack } from "@chakra-ui/react";
 
 const Concept = () => {
     return (
@@ -16,7 +16,6 @@ const Concept = () => {
             </Box>
             <Box>
               <Image src='/アルコール3.JPG' alt='top' boxSize='80' ></Image>
-
             </Box>
             <Box>
               <Image src='/内観1.JPG' alt='top' boxSize='80' ></Image>

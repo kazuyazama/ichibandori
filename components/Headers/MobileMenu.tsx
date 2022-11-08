@@ -10,7 +10,7 @@ import {
   MenuList,
   IconButton,
   Box,
-  Icon,
+  Center,
  
     
     
@@ -28,15 +28,15 @@ const MobileMenu = () => {
     aria-label='Options'
     variant='outline'
     colorScheme='red'
-    px={4}
-    py={2}
+    px={6}
+    py={4}
     transition='all 0.2s'
     borderRadius='md'
     borderWidth='1px'
     _hover={{ bg: 'red.100' }}
     
     >
-    {!isOpen ? <Box ml='11px' ><GiHamburgerMenu /></Box> : <Box ml='11px'><ImCross /></Box>}
+    {!isOpen ? <Box ml='11px'><GiHamburgerMenu  /></Box> : <Box ml='11px'><ImCross /></Box>}
     {/* <Icon as={GiHamburgerMenu} w='4' h='4'/> */}
     </MenuButton>
     <MenuList bgColor='blackAlpha.900' >

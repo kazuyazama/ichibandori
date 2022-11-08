@@ -1,7 +1,7 @@
-import React,{FC, useRef} from "react";
-import { border, Box, Container, Flex, Heading, HStack, Image, Spacer, Stack, StackDivider, Text,VStack } from "@chakra-ui/react";
+import React from "react";
+import { Box, Container, Flex, Heading, Stack, StackDivider, } from "@chakra-ui/react";
 
-import Carousels from "./Carousels";
+import Carousels from "./SplideCarousels";
 
 
 const yakitoris = [
@@ -24,13 +24,13 @@ const yakitoris = [
   alt:"ざまです。"
   },
   {
-  name:'zama',
+  name:'zama2',
   discription:"焼き鳥9",
   src:"/焼き鳥9.JPG",
   alt:"ざまです。"
   },
   {
-  name:'zama',
+  name:'zama3',
   discription:"焼き鳥5",
   src:"/焼き鳥5.JPG",
   alt:"ざまです。"
@@ -52,9 +52,9 @@ const ippins = [
   alt:"ささみです"
   },
   {
-  name:'zama',
+  name:'zama5',
   discription:"ざまです。",
-  src:"./焼き鳥画像.jpeg",
+  src:"./焼き鳥9.JPG",
   alt:"ざまです。"
   },
 ]
@@ -81,23 +81,22 @@ const TopMenu = () => {
 
         <Box flex='3'>
 
-
         <Stack borderBottom='1px' pb='10' >
-         <Carousels 
-         title='やきとり' 
-         pb='1px'  
-         menus={yakitoris}
-          />
+            <Carousels 
+            title='やきとり' 
+            menus={yakitoris} 
+             />
         </Stack>
+
+
         <Stack borderBottom='1px' py='10' >
          <Carousels 
-         title='一品もの' 
-         pb='1px'
-         menus={ippins}
+          title='一品もの' 
+          menus={ippins}
           />
         </Stack>
 
-          </Box>
+        </Box>
 
 
           {/* <VStack bgColor='tomato'>

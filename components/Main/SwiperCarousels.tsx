@@ -1,6 +1,7 @@
-import React from "react";
-import { border, Box, Container, Flex, Heading, HStack, Image, Stack,  StackDivider,  Text, } from "@chakra-ui/react";
+import React, { useRef, useState } from "react";
+import {  Box,  Heading,  Image,   Text, } from "@chakra-ui/react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -13,25 +14,25 @@ import type {Menu} from "../types/menu"
 
 SwiperCore.use([Pagination, Navigation]) 
 
- type Props = {
-    title:string;
-    pb:string;
-    menus:Array<Menu>;
-    
+type Props = {
+   title:string;
+   pb:string;
+   menus:Array<Menu>;
 }
 
-  
 
 const Carousels = ({title,menus}:Props) => {
+
+
     return (
         <>
        
         <Heading>{title}</Heading>
       
         <Box w={{base:'100%',lg:'100vh'}}>
+          
         <Swiper
-        
-        slidesPerView={1} //一度に表示するスライドの数
+        slidesPerView={1}  //一度に表示するスライドの数
         pagination={{
           clickable: true,
           bulletClass: `swiper-pagination-bullet ${s.custom_bullet}`, //非アクティブなアイコンのクラスを指定
@@ -49,26 +50,26 @@ const Carousels = ({title,menus}:Props) => {
           nextEl: "#button_next"
         }}
         loop={true}
-       >
+        >
+        
         
         {/* paginationのcssを変更する為のタグ globalcss参照 */}
         <div id="pagination" className="swiper-pagination"></div> 
         {/* navigationのcssを変更する為のタグ globalcss参照 */}
         <div id="button_prev" className="swiper-button-prev"></div> 
         <div id="button_next" className="swiper-button-next"></div>
-        {menus.map((menu,index) => {
+        {menus.map((menu) => {
         return (
-        <>
-          <SwiperSlide key={index}>
-          <Image src={menu.src} w='100%' h={{base:'300',md:'600'}}  alt={menu.alt}></Image>
-          <Text>{menu.discription}</Text>
-      
+          <React.Fragment key={menu.name}>
 
+          <SwiperSlide key={menu.name}>
+          <Image src={menu.src} w='100%' h={{base:'300',md:'600'}} alt={menu.alt}></Image>
+          <Text>{menu.discription}</Text>
           </SwiperSlide>
-     
-        </>
-      )
-    })}
+          </React.Fragment>
+
+        )
+        })}
 
         </Swiper>
         </Box>

@@ -1,16 +1,25 @@
-import { Box, Center, Flex, Heading, Image, Link, Stack,} from "@chakra-ui/react";
+import { Box,  Heading, Image, Link, Stack,} from "@chakra-ui/react";
 import { Link as Scroll } from 'react-scroll';
-import {FaHamburger} from "react-icons/fa"
 
 const PcNav = () => {
     return (
     <>
-      <Stack display={{base:'none',lg:'block'}}  >
-      <Box pb={5} fontSize='xl' mx={-4}><Scroll to='top' smooth={true} duration={600}><Image src="./choutin.PNG" boxSize='16' alignSelf='center' /></Scroll></Box>
-      <Box sx={{writingMode:'vertical-rl'}} pb={5}><Heading fontSize='md'><Link>こんせぷと</Link></Heading></Box>
-      <Box sx={{writingMode:'vertical-rl'}} pb={5}><Heading fontSize='md'><Link>めにゅー</Link></Heading></Box>
-      <Box sx={{writingMode:'vertical-rl'}} pb={5}><Heading fontSize='md'><Link>おしらせ</Link></Heading></Box>
-      <Box sx={{writingMode:'vertical-rl'}} ><Heading fontSize='md'><Link>てんぽじょうほう</Link></Heading></Box>
+      <Stack display={{base:'none',lg:'block'}} zIndex={10}>
+      <Box pb={5} fontSize='xl' mx={-4}>
+        <Scroll to='top' smooth={true} duration={600}><Image src="./choutin.PNG" boxSize='16' alignSelf='center' /></Scroll>
+      </Box>
+      <Box sx={{writingMode:'vertical-rl'}} pb={5}>
+        <Scroll to="concept" smooth={true} duration={600}><Heading fontSize='md' color='tomato' _hover={{cursor:'pointer'}} >こんせぷと</Heading></Scroll>
+      </Box>
+      <Box sx={{writingMode:'vertical-rl'}} pb={5}>
+        <Scroll to="menu" smooth={true} duration={600}><Heading fontSize='md' color='tomato' _hover={{cursor:'pointer'}}>めにゅー</Heading></Scroll>
+      </Box>
+      <Box sx={{writingMode:'vertical-rl'}} pb={5}>
+        <Scroll to="news" smooth={true} duration={600}><Heading fontSize='md' color='tomato'_hover={{cursor:'pointer'}}>おしらせ</Heading></Scroll>
+      </Box>
+      <Box sx={{writingMode:'vertical-rl'}} >
+        <Scroll to="info" smooth={true} duration={600}><Heading fontSize='md' color='tomato' _hover={{cursor:'pointer'}}>てんぽじょうほう</Heading></Scroll>
+      </Box>
       </Stack>
     </>
     );

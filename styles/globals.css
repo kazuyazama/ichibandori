@@ -25,12 +25,20 @@ a {
   }
 }
 
-.swiper-button-prev,
+/* swiperの矢印を白にする */
+/* .swiper-button-prev,
 .swiper-button-next {
   color:white!important;
+} */
+
+/* splideのスタイル */
+
+.splide {
+  padding:5px!important;
 }
 
+/* splideのpaginationのスタイル */
 
-.swiper-pagination {
-  margin-bottom: 20px !important;
+.splide__pagination {
+  bottom:3rem!important;
 }

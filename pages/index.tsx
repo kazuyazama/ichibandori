@@ -1,9 +1,10 @@
-import { Box, Container, Center,Image } from '@chakra-ui/react'
+import { Box, Container, Center,Image, Stack, Heading, Flex, Button, Text, VStack, HStack } from '@chakra-ui/react'
 import Concept from '../components/Main/Concept'
 import LayoutMenu from '../components/Headers'
 import News from '../components/Main/News'
-import TopMenu from '../components/Main/TopMenu'
+import TopMenu from '../components/Main/Osinagaki'
 import Info from '../components/Main/Info'
+import Contact from '../components/Main/Contact'
 
 export default function Home() {
   return (
@@ -57,22 +58,21 @@ export default function Home() {
       
     </section>
 
-    <section>
+    <section id='contact'>
 
-    <Box bgColor='gray.100' >
-    <Container maxW={{base:'container.xl',lg:'container.md',xl:'container.lg','2xl':'container.xl'}} h='100%'  >
-    <Box>
-    <Image src="./外観2.JPG"  boxSize='md' alt='top' />
-    </Box>
-    </Container>
-    </Box>
-
+      <Contact />
       
       {/* <Box h='96' bgColor='gray.100'>
       <Image src='./外観2.JPG' />
       </Box> */}
 
     </section>
+
+    <footer>
+      <Center h={100} fontSize='xs'>
+      Copyright © 2022 - All right reserved by 一番鶏
+      </Center>
+    </footer>
 
  
 

@@ -1,7 +1,6 @@
-
 export type Menu = {
-    name:string;
-    discription:string;
-    src:string;
-    alt:string;
-}
+  name: string;
+  discription: string;
+  src: string;
+  alt: string;
+};

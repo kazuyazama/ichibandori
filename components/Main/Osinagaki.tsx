@@ -26,9 +26,9 @@ const yakitoris = [
   },
   {
     name: "zama",
-    discription: "焼き鳥7",
-    src: "/焼き鳥7.JPG",
-    alt: "ざまです。",
+    discription: "一本220円~",
+    src: "/焼き鳥22.JPG",
+    alt: "一本220円~",
   },
   {
     name: "zama2",
@@ -42,6 +42,13 @@ const yakitoris = [
     src: "/焼き鳥5.JPG",
     alt: "ざまです。",
   },
+  {
+    name: "zama5",
+    discription: "焼き鳥5",
+    src: "/焼き鳥15.JPG",
+    alt: "ざまです。",
+  },
+ 
 ];
 
 const ippins = [
@@ -74,16 +81,16 @@ const TopMenu = () => {
         xl: "container.lg",
         "2xl": "container.xl",
       }}
-      py="20"
+      py={{base:"10",lg:"20"}}
     >
       <Box w="100%" p={4} color="white">
         <Stack
           w="full"
-          divider={<StackDivider borderColor="white" />}
+          divider={<StackDivider borderColor="tomato" />}
           spacing={4}
           align="stretch"
         >
-          <Heading>おしながき</Heading>
+          <Heading>ぎゃらりー</Heading>
 
           <Flex direction={{ base: "column", lg: "row" }} pt="10" gap="4">
             <Stack
@@ -106,11 +113,11 @@ const TopMenu = () => {
 
             <Box flex="3" order={{base:"1",lg:"2"}}  >
               <Stack borderBottom="1px" pb="10">
-                <Carousels title="やきとり" menus={yakitoris} />
+                <Carousels title="やきとり" price="1本220円~"  menus={yakitoris} />
               </Stack>
 
               <Stack borderBottom="1px" py="10">
-                <Carousels title="一品もの" menus={ippins} />
+                <Carousels title="一品もの" price="1品300円~" menus={ippins} />
               </Stack>
             </Box>
 

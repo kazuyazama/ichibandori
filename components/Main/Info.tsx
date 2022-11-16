@@ -21,35 +21,37 @@ const Info = () => {
       py="20"
     >
       <Flex direction={{ base: "column", lg: "row" }} alignItems="center" gap={10}>
-        <Stack flex="2" bg="" color="white">
+        <Stack flex="2" w="full" color="white">
           <VStack align="start">
-            <Heading pb={5}>てんぽじょうほう</Heading>
+            <Heading pb={5} >てんぽじょうほう</Heading>
 
-            <Box pb={2}>
-              <Text>電話番号</Text>
-              <Text>050-3503-1819</Text>
-            </Box>
+            <Stack pb={2}>
+              <Text fontWeight="bold">電話番号</Text>
+              <Text >042-794-4260</Text>
+            </Stack>
 
-            <Box pb={2}>
-              <Text>住所</Text>
-            </Box>
-            <Box pb={2}>
-              <Text>営業時間</Text>
-              <Text>
+            <Stack pb={2}>
+              <Text fontWeight="bold">住所</Text>
+              <Text >東京都町田市森野６丁目３５９ 横山第２ビル 1-B</Text>
+
+            </Stack>
+            <Stack pb={2}>
+              <Text fontWeight="bold">営業時間</Text>
+              <Text >
                 月曜〜土曜 <br />
                 11：00～14：00（LO 13：30）
                 <br />
                 17：00～23：00（LO 22：00）
               </Text>
-            </Box>
-            <Box pb={2}>
-              <Text>定休日</Text>
-              <Text>無休（但し、1/1及び法定点検日は除く）</Text>
-            </Box>
-            <Box pb={2}>
-              <Text>座席数</Text>
-              <Text>35席</Text>
-            </Box>
+            </Stack>
+            <Stack pb={2}>
+              <Text fontWeight="bold" >定休日</Text>
+              <Text >日曜（但し、1/1及び法定点検日は除く）</Text>
+            </Stack>
+            <Stack pb={2}>
+              <Text fontWeight="bold" >座席数</Text>
+              <Text >30席</Text>
+            </Stack>
           </VStack>
         </Stack>
         <Stack flex="3" w="full" color="white" >

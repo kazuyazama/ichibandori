@@ -23,6 +23,7 @@ const Carousels = ({ title, menus }: Props) => {
   return (
     <>
       <Heading>{title}</Heading>
+    
 
       <Box w={{ base: "100%", lg: "100vh" }}>
         <Swiper

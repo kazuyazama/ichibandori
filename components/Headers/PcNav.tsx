@@ -6,18 +6,20 @@ const PcNav = () => {
     <>
       <Stack display={{ base: "none", lg: "block" }} zIndex={10}>
         <Box pb={5} fontSize="xl" mx={-4}>
-          <Scroll to="top" smooth={true} duration={600}>
-            <Image src="./choutin.PNG" boxSize="16" alignSelf="center" />
+          <Scroll to="top" smooth={true} duration={600} >
+            <Image src="./choutin.PNG" boxSize="16" alignSelf="center" _hover={{opacity:0.8}} transition="0.3s"  />
           </Scroll>
         </Box>
+
         <Box sx={{ writingMode: "vertical-rl" }} pb={5}>
           <Scroll to="concept" smooth={true} duration={600}>
             <Heading
               fontSize="md"
               color="tomato"
-              _hover={{ cursor: "pointer" }}
+              _hover={{ cursor: "pointer",opacity:0.8 }}
+              transition="0.3s"
             >
-              こんせぷと
+              こんせぷと 
             </Heading>
           </Scroll>
         </Box>
@@ -26,9 +28,10 @@ const PcNav = () => {
             <Heading
               fontSize="md"
               color="tomato"
-              _hover={{ cursor: "pointer" }}
+              _hover={{ cursor: "pointer",opacity:0.8 }}
+              transition="0.3s"
             >
-               おしながき
+               ぎゃらりー
             </Heading>
           </Scroll>
         </Box>
@@ -37,7 +40,8 @@ const PcNav = () => {
             <Heading
               fontSize="md"
               color="tomato"
-              _hover={{ cursor: "pointer" }}
+              _hover={{ cursor: "pointer",opacity:0.8 }}
+              transition="0.3s"
             >
               おしらせ
             </Heading>
@@ -48,7 +52,7 @@ const PcNav = () => {
             <Heading
               fontSize="md"
               color="tomato"
-              _hover={{ cursor: "pointer" }}
+              _hover={{ cursor: "pointer",opacity:0.8 }}
             >
               てんぽじょうほう
             </Heading>

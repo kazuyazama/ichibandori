@@ -8,17 +8,21 @@ import {
   VStack,
   Flex,
   Center,
+  Spacer,
 } from "@chakra-ui/react";
 
 const News = () => {
   return (
     <Box
-      h="2xl"
-      opacity="0.8"
-      bgImage="url('./外観4.JPG')"
+      h={{base:"xl",lg:"2xl"}}
+      opacity={{base:"0.6",lg:"0.8"}}
+      bgImage={{base:'url("./外観6.JPG")',lg:"url('./外観4.JPG')"}}
       bgSize="cover"
       bgPos="center"
       bgRepeat="no-repeat"
+      py={{base:"0",lg:"20"}}
+      mt={{base:"20",lg:"0"}}
+    
     >
       {/* <Image src="./一番鶏お店.jpeg" boxSize='100%' opacity='0.7' /> */}
       <Container
@@ -31,7 +35,7 @@ const News = () => {
         h="100%"
       >
         <Center color="white" h="100%" justifyContent="start">
-          <Stack>
+          <Stack pt={{base:"200",lg:"0"}}>
             <Heading>にゅーす</Heading>
             <Text>2022.10.27日メニュー変更のお知らせ</Text>
           </Stack>

@@ -10,6 +10,7 @@ import {
   IconButton,
   Box,
   Center,
+  CloseButton,
 } from "@chakra-ui/react";
 
 const MobileMenu = () => {
@@ -35,8 +36,8 @@ const MobileMenu = () => {
                 <GiHamburgerMenu />
               </Box>
             ) : (
-              <Box ml="11px">
-                <ImCross />
+              <Box ml="3.5px">
+                <CloseButton />
               </Box>
             )}
             {/* <Icon as={GiHamburgerMenu} w='4' h='4'/> */}

@@ -28,7 +28,7 @@ const MobileNav = () => {
       <MenuItem p={2}>
         <Scroll to="menu" smooth={true} duration={600}>
           <Heading fontSize="md" color="tomato">
-            おしながき
+            ぎゃらりー
           </Heading>
         </Scroll>
       </MenuItem>

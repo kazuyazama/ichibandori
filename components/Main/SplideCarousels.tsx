@@ -1,5 +1,5 @@
-import React from "react";
-import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import React, { ReactElement } from "react";
+import { Box, Heading, HStack, Image, Stack, Text, VStack } from "@chakra-ui/react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 // splideデフォルトのテーマ
@@ -10,6 +10,7 @@ import type { Menu } from "../types/menu";
 type Props = {
   title: string;
   menus: Array<Menu>;
+  price:string;
 };
 
 // splideオプション
@@ -24,10 +25,13 @@ const options = {
   speed: 1000, //何秒かけてスライドが変わるか
 };
 
-const Carousels = ({ title, menus }: Props) => {
+const Carousels = ({ title,menus,price }: Props) => {
   return (
     <>
+    <HStack alignItems="end">
       <Heading>{title}</Heading>
+      <Text as="span">{price}</Text>
+    </HStack>
       <Box w='full' >
         <Splide options={options} aria-labelledby={title} hasTrack={false}>
           <div style={{ position: "relative" }}>

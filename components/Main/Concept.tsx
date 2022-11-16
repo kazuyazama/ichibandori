@@ -20,10 +20,11 @@ const Concept = () => {
         xl: "container.lg",
         "2xl": "container.xl",
       }}
-      py="20"
+      pt="20"
+      pb="10"
     >
       <Box w="100%" p={4}>
-        <Stack w="full" divider={<StackDivider borderColor="white" />}>
+        <Stack w="full" divider={<StackDivider borderColor="tomato" />}>
           <Heading>こんせぷと</Heading>
           <Flex direction={{ base: "column", lg: "row" }} pt="10" gap="4">
             <Stack flex="4" spacing="10">
@@ -37,7 +38,7 @@ const Concept = () => {
                 direction={{ base: "column", lg: "row" }}
                 justifyContent="space-between"
                 align="center"
-                spacing="2"
+                spacing={{base:"7",lg:"2"}}
               >
                 <Box>
                   <Image src="/焼き鳥4.JPG" alt="top" boxSize="80" borderRadius='lg'></Image>

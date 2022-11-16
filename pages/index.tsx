@@ -2,7 +2,7 @@ import { Box, Container, Center,Image, Stack, Heading, Flex, Button, Text, VStac
 import Concept from '../components/Main/Concept'
 import LayoutMenu from '../components/Headers'
 import News from '../components/Main/News'
-import TopMenu from '../components/Main/Osinagaki'
+import TopMenu from '../components/Main/Gallary'
 import Info from '../components/Main/Info'
 import Contact from '../components/Main/Contact'
 

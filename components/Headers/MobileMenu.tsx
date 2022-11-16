@@ -1,15 +1,8 @@
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import MobileNav from "./MobileNav";
 
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  IconButton,
-  Box,
-  CloseButton,
-} from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, IconButton } from "@chakra-ui/react";
 
 const MobileMenu = () => {
   return (
@@ -17,7 +10,7 @@ const MobileMenu = () => {
       {({ isOpen }) => (
         <>
           <MenuButton
-            isActive={<GiHamburgerMenu />}
+            isActive={<HamburgerIcon />}
             as={IconButton}
             aria-label="Options"
             variant="outline"
@@ -29,16 +22,7 @@ const MobileMenu = () => {
             borderWidth="1px"
             _hover={{ bg: "red.100" }}
           >
-            {!isOpen ? (
-              <Box ml="11px">
-                <GiHamburgerMenu />
-              </Box>
-            ) : (
-              <Box ml="3.5px">
-                <CloseButton />
-              </Box>
-            )}
-            {/* <Icon as={GiHamburgerMenu} w='4' h='4'/> */}
+            {!isOpen ? <HamburgerIcon my={1} /> : <CloseIcon my={1} />}
           </MenuButton>
           <MenuList bgColor="blackAlpha.900">
             <MobileNav />

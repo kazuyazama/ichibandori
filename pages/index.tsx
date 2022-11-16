@@ -5,10 +5,14 @@ import News from "../components/Main/News";
 import TopMenu from "../components/Main/Gallary";
 import Info from "../components/Main/Info";
 import Contact from "../components/Main/Contact";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>一番鶏　｜ 町田</title>
+    </Head>
       <Box overflowX="hidden" id="top">
         <LayoutMenu />
         <section>
@@ -32,9 +36,10 @@ export default function Home() {
                     xl: "container.xl",
                     "2xl": "container.xl",
                   }}
+                  mx="auto"
                 >
-                  <Center h={{ base: "lg", lg: "4xl" }}>
-                    <Image src="./logo3.PNG" w={400} h={300} alt="top" />
+                  <Center h={{ base: "xl", lg: "4xl" }} >
+                    <Image src="./logo3.PNG" w={400} h={300} alt="top"  />
                   </Center>
                 </Box>
               </Container>

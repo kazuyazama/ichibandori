@@ -39,7 +39,7 @@ export default function Home() {
                   mx="auto"
                 >
                   <Center h={{ base: "xl", lg: "4xl" }} >
-                    <Image src="./logo3.PNG" w={400} h={300} alt="top"  />
+                    <Image src="/logo3.PNG" w={400} h={300} alt="top"  />
                   </Center>
                 </Box>
               </Container>

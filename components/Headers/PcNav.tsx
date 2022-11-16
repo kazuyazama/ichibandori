@@ -8,7 +8,7 @@ const PcNav = () => {
         <Box pb={5} fontSize="xl" mx={-4}>
           <Scroll to="top" smooth={true} duration={600}>
             <Image
-              src="./choutin.PNG"
+              src="/choutin.PNG"
               boxSize="16"
               alt="一番鶏東京ちょうちん"
               alignSelf="center"

@@ -4,7 +4,6 @@ import MobileNav from "./MobileNav";
 
 import { Menu, MenuButton, MenuList, IconButton } from "@chakra-ui/react";
 
-
 const MobileMenu = () => {
   return (
     <Menu>

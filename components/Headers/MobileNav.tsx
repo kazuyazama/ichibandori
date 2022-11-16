@@ -8,7 +8,7 @@ const MobileNav = () => {
         一番鶏 町田
       </Heading>
 
-      <MenuItem p={2} _hover={{ bgColor: "black" }}>
+      <MenuItem p={2} _hover={{ bgColor: "black" }} _focus={{bgColor:"white"}}>
         <Scroll to="concept" smooth={true} duration={600}>
           <Heading fontSize="md" color="tomato">
             こんせぷと

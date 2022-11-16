@@ -41,13 +41,13 @@ const Concept = () => {
                 spacing={{base:"7",lg:"2"}}
               >
                 <Box>
-                  <Image src="/焼き鳥4.JPG" alt="top" boxSize="80" borderRadius='lg'></Image>
+                  <Image src="/焼き鳥4.JPG" alt="焼き鳥" boxSize="80" borderRadius='lg'></Image>
                 </Box>
                 <Box>
-                  <Image src="/アルコール3.JPG" alt="top" boxSize="80" borderRadius='lg'></Image>
+                  <Image src="/アルコール3.JPG" alt="アルコール" boxSize="80" borderRadius='lg'></Image>
                 </Box>
                 <Box>
-                  <Image src="/内観1.JPG" alt="top" boxSize="80" borderRadius='lg'></Image>
+                  <Image src="/内観1.JPG" alt="店舗内観" boxSize="80" borderRadius='lg'></Image>
                 </Box>
               </Stack>
               <Text>

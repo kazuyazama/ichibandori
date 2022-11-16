@@ -8,7 +8,6 @@ import {
   Button,
   Box,
   Image,
-  Link,
 } from "@chakra-ui/react";
 
 const Contact = () => {
@@ -32,7 +31,7 @@ const Contact = () => {
               <Image
                 src="./外観2.JPG"
                 boxSize="md"
-                alt="top"
+                alt="店舗外観"
                 opacity={0.8}
                 borderTopEndRadius={{ base: 0, sm: "2xl" }}
               />

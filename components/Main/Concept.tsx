@@ -25,13 +25,13 @@ const Concept = () => {
     >
       <Box w="100%" p={4}>
         <Stack w="full" divider={<StackDivider borderColor="tomato" />}>
-          <Heading>こんせぷと</Heading>
+          <Heading as="h1">こんせぷと</Heading>
           <Flex direction={{ base: "column", lg: "row" }} pt="10" gap="4">
             <Stack flex="4" spacing="10">
-              <Heading>
+              <Heading as="h2">
                 「カオの見える生産者」と「食材のチカラを活かす」焼鳥・ジビエ・ワインの店
               </Heading>
-              <Text>
+              <Text as="p">
                 化学抗生物質、配合飼料を一切使用せず自然飼育された「黒岩土鶏」を中心に部位の特徴を活かし調理した焼鳥。そしてマタギから直接届く鹿、猪等のジビエを炭火の良さを活かしシンプルに、また時に枠にとらわれない調理をすることで最高の食を提供いたします
               </Text>
               <Stack
@@ -50,7 +50,7 @@ const Concept = () => {
                   <Image src="/内観1.JPG" alt="店舗内観" boxSize="80" borderRadius='lg'></Image>
                 </Box>
               </Stack>
-              <Text>
+              <Text as="p">
                 黒岩土鶏
                 宮崎県児湯郡にある尾鈴山。手つかずの自然が残るこの山の斜面で、“黒岩土鶏”は育てられています。鍵のかかっていない鶏舎を含む、１８ヘクタールの敷地で、鶏たちは自由に野山を駆け回っているのです。
                 “土鶏”の名の由来は、土を食べることにあります。土には、天然の抗生物質が豊富に含まれていることを鶏たちは知っており、具合が悪くなると自ら土を食べるのです。かくして、土で自分の体調を整える鶏達は、土鶏と呼ばれます。

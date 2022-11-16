@@ -1,15 +1,5 @@
-import {
-  Box,
-  Heading,
-  Link,
-  LinkProps,
-  MenuDivider,
-  MenuItem,
-  Stack,
-} from "@chakra-ui/react";
+import { Heading, MenuDivider, MenuItem, Stack } from "@chakra-ui/react";
 import { Link as Scroll } from "react-scroll";
-
-// const HoverLink = (props: LinkProps) => <Link rounded="base" _hover={{bg:"gray.200"}} p={2} {...props } />
 
 const MobileNav = () => {
   return (

@@ -1,6 +1,5 @@
-import { Box, Heading, HStack, Image, Stack, VStack } from "@chakra-ui/react";
-import DrawerMenu from "./MobileMenu";
-import MobileNav from "./MobileNav";
+import { Box, HStack, Image, Stack } from "@chakra-ui/react";
+import MobileMenu from "./MobileMenu";
 import PcNav from "./PcNav";
 
 const LayoutMenu = () => {
@@ -18,7 +17,7 @@ const LayoutMenu = () => {
         <Box display={{ base: "block", lg: "none" }}>
           {" "}
           {/* for mobile */}
-          <DrawerMenu />
+          <MobileMenu />
         </Box>
       </HStack>
 

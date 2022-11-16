@@ -1,6 +1,5 @@
 import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { ImCross } from "react-icons/im";
 import MobileNav from "./MobileNav";
 
 import {
@@ -9,7 +8,6 @@ import {
   MenuList,
   IconButton,
   Box,
-  Center,
   CloseButton,
 } from "@chakra-ui/react";
 

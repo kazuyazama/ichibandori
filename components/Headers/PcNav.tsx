@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Link, Stack } from "@chakra-ui/react";
+import { Box, Heading, Image, Stack } from "@chakra-ui/react";
 import { Link as Scroll } from "react-scroll";
 
 const PcNav = () => {
@@ -6,8 +6,14 @@ const PcNav = () => {
     <>
       <Stack display={{ base: "none", lg: "block" }} zIndex={10}>
         <Box pb={5} fontSize="xl" mx={-4}>
-          <Scroll to="top" smooth={true} duration={600} >
-            <Image src="./choutin.PNG" boxSize="16" alignSelf="center" _hover={{opacity:0.8}} transition="0.3s"  />
+          <Scroll to="top" smooth={true} duration={600}>
+            <Image
+              src="./choutin.PNG"
+              boxSize="16"
+              alignSelf="center"
+              _hover={{ opacity: 0.8 }}
+              transition="0.3s"
+            />
           </Scroll>
         </Box>
 
@@ -16,10 +22,10 @@ const PcNav = () => {
             <Heading
               fontSize="md"
               color="tomato"
-              _hover={{ cursor: "pointer",opacity:0.8 }}
+              _hover={{ cursor: "pointer", opacity: 0.8 }}
               transition="0.3s"
             >
-              こんせぷと 
+              こんせぷと
             </Heading>
           </Scroll>
         </Box>
@@ -28,10 +34,10 @@ const PcNav = () => {
             <Heading
               fontSize="md"
               color="tomato"
-              _hover={{ cursor: "pointer",opacity:0.8 }}
+              _hover={{ cursor: "pointer", opacity: 0.8 }}
               transition="0.3s"
             >
-               ぎゃらりー
+              ぎゃらりー
             </Heading>
           </Scroll>
         </Box>
@@ -40,7 +46,7 @@ const PcNav = () => {
             <Heading
               fontSize="md"
               color="tomato"
-              _hover={{ cursor: "pointer",opacity:0.8 }}
+              _hover={{ cursor: "pointer", opacity: 0.8 }}
               transition="0.3s"
             >
               おしらせ
@@ -52,7 +58,7 @@ const PcNav = () => {
             <Heading
               fontSize="md"
               color="tomato"
-              _hover={{ cursor: "pointer",opacity:0.8 }}
+              _hover={{ cursor: "pointer", opacity: 0.8 }}
             >
               てんぽじょうほう
             </Heading>

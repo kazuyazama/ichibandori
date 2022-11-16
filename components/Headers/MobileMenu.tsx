@@ -4,6 +4,7 @@ import MobileNav from "./MobileNav";
 
 import { Menu, MenuButton, MenuList, IconButton } from "@chakra-ui/react";
 
+
 const MobileMenu = () => {
   return (
     <Menu>
@@ -12,19 +13,24 @@ const MobileMenu = () => {
           <MenuButton
             isActive={<HamburgerIcon />}
             as={IconButton}
+            size="4"
             aria-label="Options"
             variant="outline"
             colorScheme="red"
-            px={6}
-            py={4}
+            px={4}
+            py={2}
             transition="all 0.2s"
             borderRadius="md"
             borderWidth="1px"
             _hover={{ bg: "red.100" }}
           >
-            {!isOpen ? <HamburgerIcon my={1} /> : <CloseIcon my={1} />}
+            {!isOpen ? (
+              <HamburgerIcon boxSize={7} my={1} />
+            ) : (
+              <CloseIcon boxSize={7} my={1} />
+            )}
           </MenuButton>
-          <MenuList bgColor="blackAlpha.900">
+          <MenuList shadow="xl" w="50vw">
             <MobileNav />
           </MenuList>
         </>

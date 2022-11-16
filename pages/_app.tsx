@@ -16,8 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
           styles: {
             global: {
               body: {
-                bg: "Black",
-                color: "WhiteAlpha 200",
+                bg: "black",
+                color: "#F7FAFC",
               },
             },
           },

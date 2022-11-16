@@ -18,7 +18,7 @@ export default function Home() {
         <section>
           {/* <Box > */}
 
-          <Box bgColor="white">
+          <Box bgColor="white" >
             <Box
             // h='4xl'
             // opacity='0.5'

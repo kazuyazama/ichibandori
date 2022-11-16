@@ -1,4 +1,4 @@
-import { Box, HStack, Image, Stack } from "@chakra-ui/react";
+import { Box, HStack, Image, Spacer, Stack } from "@chakra-ui/react";
 import MobileMenu from "./MobileMenu";
 import PcNav from "./PcNav";
 
@@ -8,14 +8,14 @@ const LayoutMenu = () => {
       <HStack
         p={{ base: "4", lg: "0" }}
         bgColor="white"
-        spacing="250px"
-        justifyContent="space-between"
+      
       >
-        <Box display={{ base: "block", lg: "none" }} color="black">
+        <Spacer />
+        {/* <Box display={{ base: "block", lg: "none" }} color="black">
           <Image src="/logo3.png" alt="一番鶏." w={14} />
-        </Box>
+        </Box> */}
         <Box display={{ base: "block", lg: "none" }}>
-          {" "}
+        
           {/* for mobile */}
           <MobileMenu />
         </Box>

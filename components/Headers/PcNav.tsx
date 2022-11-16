@@ -10,6 +10,7 @@ const PcNav = () => {
             <Image
               src="./choutin.PNG"
               boxSize="16"
+              alt="一番鶏東京ちょうちん"
               alignSelf="center"
               _hover={{ opacity: 0.8 }}
               transition="0.3s"

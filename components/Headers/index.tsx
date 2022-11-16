@@ -12,7 +12,7 @@ const LayoutMenu = () => {
         justifyContent="space-between"
       >
         <Box display={{ base: "block", lg: "none" }} color="black">
-          <Image src="./logo3.png" w={14} />
+          <Image src="./logo3.PNG" alt="一番鶏." w={14} />
         </Box>
         <Box display={{ base: "block", lg: "none" }}>
           {" "}

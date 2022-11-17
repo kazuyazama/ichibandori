@@ -83,7 +83,7 @@ const TopMenu = () => {
       }}
       py={{base:"10",lg:"20"}}
     >
-      <Box w="100%" p={4} color="white">
+      <Box w="100%" px={4} color="white">
         <Stack
           w="full"
           divider={<StackDivider borderColor="tomato" />}

@@ -20,7 +20,7 @@ const Info = () => {
       }}
       py="20"
     >
-      <Flex direction={{ base: "column", lg: "row" }} alignItems="center" gap={10}>
+      <Flex w="100%" px={4} direction={{ base: "column", lg: "row" }} alignItems="center" gap={10}>
         <Stack flex="2" w="full" color="white">
           <VStack align="start">
             <Heading pb={5} >てんぽじょうほう</Heading>
@@ -55,7 +55,7 @@ const Info = () => {
           </VStack>
         </Stack>
         <Stack flex="3" w="full" color="white" >
-          <AspectRatio ratio={16 / 10}  >
+          <AspectRatio ratio={{base:16 / 14,lg:16 / 10}}  >
             <iframe style={{'borderRadius':'10px'}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.11403588935!2d139.42968821560962!3d35.55088574471603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ff29f204fc93%3A0xedba1eaeb6791e0e!2z5LiA6JWD6baPIOeUuueUsA!5e0!3m2!1sja!2sjp!4v1666867109879!5m2!1sja!2sjp" />
           </AspectRatio>
         </Stack>

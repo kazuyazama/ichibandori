@@ -5,20 +5,18 @@ import News from "../components/Main/News";
 import TopMenu from "../components/Main/Gallary";
 import Info from "../components/Main/Info";
 import Contact from "../components/Main/Contact";
-import Head from "next/head";
+import Meta from "../components/Headers/Meta";
 
 export default function Home() {
   return (
     <>
-    <Head>
-      <title>一番鶏　｜ 町田</title>
-    </Head>
+      <Meta />
       <Box overflowX="hidden" id="top">
         <LayoutMenu />
         <section>
           {/* <Box > */}
 
-          <Box bgColor="white" >
+          <Box bgColor="white">
             <Box
             // h='4xl'
             // opacity='0.5'
@@ -38,8 +36,8 @@ export default function Home() {
                   }}
                   mx="auto"
                 >
-                  <Center h={{ base: "xl", lg: "4xl" }} >
-                    <Image src="/logo3.png" w={400} h={300} alt="一番鶏"  />
+                  <Center h={{ base: "xl", lg: "4xl" }}>
+                    <Image src="/logo3.png" w={400} h={300} alt="一番鶏" />
                   </Center>
                 </Box>
               </Container>

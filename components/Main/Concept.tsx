@@ -23,7 +23,7 @@ const Concept = () => {
       pt="20"
       pb="10"
     >
-      <Box w="100%" p={4}>
+      <Box w="100%" px={4}>
         <Stack w="full" divider={<StackDivider borderColor="tomato" />}>
           <Heading as="h1">こんせぷと</Heading>
           <Flex direction={{ base: "column", lg: "row" }} pt="10" gap="4">

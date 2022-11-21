@@ -1,13 +1,41 @@
 import { Box, Container, Center, Image } from "@chakra-ui/react";
+
+import { motion, Variants } from "framer-motion";
 import Concept from "../components/Main/Concept";
 import LayoutMenu from "../components/Headers";
 import News from "../components/Main/News";
-import TopMenu from "../components/Main/Gallary";
+import Gallary from "../components/Main/Gallary";
 import Info from "../components/Main/Info";
 import Contact from "../components/Main/Contact";
 import Meta from "../components/Headers/Meta";
 
 export default function Home() {
+  const topVariants: Variants = {
+    offscreen: {
+      opacity: 0,
+    },
+    onscreen: {
+      opacity: 1,
+      y: [50, 0],
+      transition: {
+        ease: [0.17, 0.55, 0.55, 1],
+        duration: 0.9,
+        delay: 0.5,
+        // delayChildren: 0.3,
+        // staggerChildren: 0.3,
+      },
+    },
+  };
+
+  // const childrenVariants: Variants = {
+  //   offscreen: {
+  //     opacity: 0,
+  //   },
+  //   onscreen: {
+  //     opacity: 1,
+  //   },
+  // };
+
   return (
     <>
       <Meta />
@@ -36,9 +64,16 @@ export default function Home() {
                   }}
                   mx="auto"
                 >
-                  <Center h={{ base: "xl", lg: "4xl" }}>
-                    <Image src="/logo3.png" w={400} h={300} alt="一番鶏" />
-                  </Center>
+                  <motion.div
+                    variants={topVariants}
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ once: true, amount: 0.8 }}
+                  >
+                    <Center h={{ base: "xl", lg: "4xl" }}>
+                      <Image src="/logo3.png" w={400} h={300} alt="一番鶏" />
+                    </Center>
+                  </motion.div>
                 </Box>
               </Container>
             </Box>
@@ -50,7 +85,7 @@ export default function Home() {
         </section>
 
         <section id="menu">
-          <TopMenu />
+          <Gallary />
         </section>
 
         <section id="news">

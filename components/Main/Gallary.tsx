@@ -48,7 +48,6 @@ const yakitoris = [
     src: "/焼き鳥15.JPG",
     alt: "ざまです。",
   },
- 
 ];
 
 const ippins = [
@@ -72,7 +71,7 @@ const ippins = [
   },
 ];
 
-const TopMenu = () => {
+const Gallary = () => {
   return (
     <Container
       maxW={{
@@ -81,7 +80,7 @@ const TopMenu = () => {
         xl: "container.lg",
         "2xl": "container.xl",
       }}
-      py={{base:"10",lg:"20"}}
+      py={{ base: "10", lg: "20" }}
     >
       <Box w="100%" px={4} color="white">
         <Stack
@@ -101,7 +100,7 @@ const TopMenu = () => {
               justifyContent="center"
               alignItems={{ base: "center", lg: "start" }}
               order="2"
-              pt={{base:"10",lg:"0"}}
+              pt={{ base: "10", lg: "0" }}
             >
               <Box w={200}>
                 <Image src="/irast/お酒.png" alt="鶏"></Image>
@@ -111,9 +110,13 @@ const TopMenu = () => {
               </Box>
             </Stack>
 
-            <Box flex="3" order={{base:"1",lg:"2"}}  >
+            <Box flex="3" order={{ base: "1", lg: "2" }}>
               <Stack borderBottom="1px" pb="10">
-                <Carousels title="やきとり" price="1本220円~"  menus={yakitoris} />
+                <Carousels
+                  title="やきとり"
+                  price="1本220円~"
+                  menus={yakitoris}
+                />
               </Stack>
 
               <Stack borderBottom="1px" py="10">
@@ -133,4 +136,4 @@ const TopMenu = () => {
   );
 };
 
-export default TopMenu;
+export default Gallary;

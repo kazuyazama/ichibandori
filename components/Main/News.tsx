@@ -3,12 +3,8 @@ import {
   Container,
   Heading,
   Text,
-  Image,
   Stack,
-  VStack,
-  Flex,
   Center,
-  Spacer,
 } from "@chakra-ui/react";
 
 const News = () => {

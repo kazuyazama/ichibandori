@@ -3,12 +3,10 @@ import {
   Container,
   Flex,
   Heading,
-  HStack,
   Image,
   Stack,
   StackDivider,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 
 const Concept = () => {
@@ -38,16 +36,31 @@ const Concept = () => {
                 direction={{ base: "column", lg: "row" }}
                 justifyContent="space-between"
                 align="center"
-                spacing={{base:"7",lg:"2"}}
+                spacing={{ base: "7", lg: "2" }}
               >
                 <Box>
-                  <Image src="/焼き鳥4.JPG" alt="焼き鳥" boxSize="80" borderRadius='lg'></Image>
+                  <Image
+                    src="/焼き鳥4.JPG"
+                    alt="焼き鳥"
+                    boxSize="80"
+                    borderRadius="lg"
+                  ></Image>
                 </Box>
                 <Box>
-                  <Image src="/アルコール3.JPG" alt="アルコール" boxSize="80" borderRadius='lg'></Image>
+                  <Image
+                    src="/アルコール3.JPG"
+                    alt="アルコール"
+                    boxSize="80"
+                    borderRadius="lg"
+                  ></Image>
                 </Box>
                 <Box>
-                  <Image src="/内観1.JPG" alt="店舗内観" boxSize="80" borderRadius='lg'></Image>
+                  <Image
+                    src="/内観1.JPG"
+                    alt="店舗内観"
+                    boxSize="80"
+                    borderRadius="lg"
+                  ></Image>
                 </Box>
               </Stack>
               <Text as="p">
@@ -61,7 +74,11 @@ const Concept = () => {
               </Text>
             </Stack>
 
-            <Stack flex="1"  justifyContent={{base:"end",lg:"start"}} alignItems="end"  >
+            <Stack
+              flex="1"
+              justifyContent={{ base: "end", lg: "start" }}
+              alignItems="end"
+            >
               <Image src="/irast/鶏4.png" alt="鶏" boxSize="200px"></Image>
             </Stack>
           </Flex>

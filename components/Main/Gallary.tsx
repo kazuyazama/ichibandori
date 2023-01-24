@@ -58,17 +58,17 @@ const ippins = [
     alt: "皮です",
   },
   {
-    name: "sasami",
-    discription: "ささみです。",
-    src: "./釜飯TOP.jpeg",
-    alt: "ささみです",
+    name: "tatalo",
+    discription: "たたき",
+    src: "./たたき1.JPG",
+    alt: "tataki",
   },
-  {
-    name: "zama5",
-    discription: "ざまです。",
-    src: "./焼き鳥9.JPG",
-    alt: "ざまです。",
-  },
+  // {
+  //   name: "zama5",
+  //   discription: "ざまです。",
+  //   src: "./焼き鳥9.JPG",
+  //   alt: "ざまです。",
+  // },
 ];
 
 const Gallary = () => {

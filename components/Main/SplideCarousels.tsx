@@ -1,12 +1,10 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import {
   Box,
   Heading,
   HStack,
   Image,
-  Stack,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
@@ -16,7 +14,7 @@ import "@splidejs/react-splide/css";
 import type { Menu } from "../types/menu";
 
 type Props = {
-  title: string;
+  title?: string;
   menus: Array<Menu>;
   price: string;
 };
@@ -55,7 +53,7 @@ const Carousels = ({ title, menus, price }: Props) => {
                         alt={menu.alt}
                         borderRadius="lg"
                       ></Image>
-                      <Text>{menu.discription}</Text>
+                      {/* <Text>{menu.discription}</Text> */}
                     </SplideSlide>
                   </React.Fragment>
                 );

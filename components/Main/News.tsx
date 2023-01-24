@@ -33,7 +33,7 @@ const News = () => {
         <Center w="100%" px={4} color="white" h="100%" justifyContent="start">
           <Stack pt={{base:"200",lg:"0"}}>
             <Heading>おしらせ</Heading>
-            <Text>2022.10.27日メニュー変更のお知らせ</Text>
+            <Text>2023.01.24　ホームページを開設しました </Text>
           </Stack>
         </Center>
       </Container>

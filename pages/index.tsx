@@ -20,7 +20,7 @@ export default function Home() {
       transition: {
         ease: [0.17, 0.55, 0.55, 1],
         duration: 0.9,
-        delay: 0.5,
+        delay: 0.3,
         // delayChildren: 0.3,
         // staggerChildren: 0.3,
       },
@@ -81,23 +81,58 @@ export default function Home() {
         </section>
 
         <section id="concept">
-          <Concept />
+          <motion.div
+            variants={topVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            <Concept />
+          </motion.div>
         </section>
 
         <section id="menu">
+        <motion.div
+            variants={topVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.1 }}
+          >
           <Gallary />
+          </motion.div>
         </section>
 
         <section id="news">
+        <motion.div
+            variants={topVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.1 }}
+          >
           <News />
+          </motion.div>
         </section>
 
         <section id="info">
+        <motion.div
+            variants={topVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.1 }}
+          >
           <Info />
+          </motion.div>
         </section>
 
         <section id="contact">
+        <motion.div
+            variants={topVariants}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.1 }}
+          >
           <Contact />
+          </motion.div>
 
           {/* <Box h='96' bgColor='gray.100'>
       <Image src='./外観2.JPG' />

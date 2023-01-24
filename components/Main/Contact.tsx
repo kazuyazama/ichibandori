@@ -47,12 +47,13 @@ const Contact = () => {
                     href="tel:042-794-4260"
                     colorScheme="red"
                     size="md"
+                    width={200}
                   >
                     電話する
                   </Button>
-                  <Button as="a" colorScheme="red" size="md">
+                  {/* <Button as="a" colorScheme="red" size="md">
                     WEBで予約
-                  </Button>
+                  </Button> */}
                 </HStack>
               </VStack>
             </Center>

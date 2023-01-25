@@ -38,19 +38,17 @@ const Info = () => {
             <Stack pb={2}>
               <Text fontWeight="bold">営業時間</Text>
               <Text >
-                月曜〜土曜 <br />
-                11：00～14：00（LO 13：30）
-                <br />
+              
                 17：00～23：00（LO 22：00）
               </Text>
             </Stack>
             <Stack pb={2}>
               <Text fontWeight="bold" >定休日</Text>
-              <Text >日曜（但し、1/1及び法定点検日は除く）</Text>
+              <Text >日曜（但し、営業日でも予告なくお休みさせていただく場合がございます。）</Text>
             </Stack>
             <Stack pb={2}>
               <Text fontWeight="bold" >座席数</Text>
-              <Text >30席</Text>
+              <Text >20席</Text>
             </Stack>
           </VStack>
         </Stack>
